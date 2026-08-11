@@ -15,7 +15,7 @@ body{
 
 .left{
     width:35%;
-    background-color:#2f3640;
+    background-color:#2f3f40;
     color:white;
     padding:20px;
 }
@@ -104,6 +104,25 @@ a{
     text-decoration:underline;
 }
 
+div.left a:hover{
+    text-decoration:underline;
+}
+
 strong{
     font-weight:bold;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edu-header p {
+  margin: 5px 0;
+}
+
+#name {
+  color: #057570;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
