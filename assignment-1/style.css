@@ -126,3 +126,11 @@ strong{
   color: #057570;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
+
+#cgpa{
+    margin:0%
+}
+
+#award{
+    font-style: italic;
+}
