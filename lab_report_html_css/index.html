@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Biryani - Recipe Card</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Internal CSS -->
+     <style>
+        body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: #fdf6ec;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        #recipe-title {
+            color: #d35400;
+        }
+
+     </style>
+  </head>
+  <body>
+    <!-- Banner div is split into two nested divs -->
+    <div class="banner">
+      <div class="banner-left">
+        <h1 id="recipe-title">Chicken Biryani</h1>
+        <p>A classic South Asian rice dish</p>
+      </div>
+      <div class="banner-right">
+        <p>Serves: 4 | Prep Time: 30 mins | Cook Time: 1 hr</p>
+        <p>Difficulty: Medium</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container">
+      <!-- Intro -->
+      <h2>About This Recipe</h2>
+      <p>
+        Biryani is a <b>fragrant, spiced rich dish</b> layared with marinated
+        chicken and slow-cooked to perfection. <br />
+        This page is a lab report project covering HTML and CSS basics.
+      </p>
+
+      <!-- style attribute used directly on a tag -->
+      <p style="color: #555; font-style: italic">
+        Note: This recipe is a simplified version for educational purposes.
+      </p>
+
+      <!-- Image tag with src and alt attributes -->
+      <div style="text-align: center;">
+        <img
+          src="image.png"
+          alt="Plate of Chicken Biryani"
+          width="400"
+          height="300"
+        />
+      </div>
+    
+      <hr>
+      <!-- sub and sup tags -->
+      <p>
+        Nutrition note : One serving has roughly 450 kcal. Saffron's active compound is C<sub>20</sub>H<sub>24</sub>O, which gives the dish its golden color. The spice level is rated 3<sup>rd</sup> out
+        of 5 for heat intensity.
+      </p>
+
+      <!-- blockquote tag -->
+       <blockquote>
+        Good biryani is not rushed; it is layered with care and cooked with patience. The aroma alone is worth the wait!
+       </blockquote>
+
+       <!-- q tag-->
+        <p>  
+          As one chef once said, <q>Cooking is an art, and biryani is its masterpiece.</q>
+        </p>
+
+        <!-- abbr tag -->
+         <p>
+            The term <abbr title="Basmati Rice">Basmati</abbr> refers to a long-grain rice variety that is commonly used in biryani for its fragrance and texture.
+         </p>
+
+         <!-- preformatted text -->
+          <h3>Why chicken biryani is delicious </h3>
+            <pre>
+                Made with
+                - Basmati rice
+                - Chicken marinated in yogurt and spices
+                - Saffron-infused milk
+                - Fried onions and fresh herbs
+                - Slow-cooked to perfection
+            </pre>
+
+        <!-- Links: absolute and relative URL -->
+         <h3>Resources</h3>
+         <p>Learn more about the dish on 
+<a href="https://en.wikipedia.org/wiki/Biryani" target="_blank">Wikipedia</a>
+         </p>
+         <p>See more recipes: <a href="recipe.html" target="_blank">More Recipes</a></p>
+
+
+         <hr>
+         <!-- Lists -->
+          <h2>Ingredients &amp; Steps</h2>
+            <h3>Ingredients</h3>
+            <ul>
+              <li>Basmati rice</li>
+              <li>Chicken</li>
+              <li>Saffron</li>
+              <li>Fried onions</li>
+              <li>Fresh herbs</li>
+            </ul>
+            <h3>Cooking Steps</h3>
+            <ol>
+              <li>Marinate the chicken in yogurt and spices.</li>
+              <li>Cook the rice separately until fluffy.</li>
+              <li>Layer the rice and chicken in a pot.</li>
+              <li>Top with saffron-infused milk and fried onions.</li>
+              <li>Slow-cook until everything is well combined.</li>
+            </ol>
+
+            <h3>Spice Glossary</h3>
+            <dl>
+              <dt>Turmeric</dt>
+              <dd>A bright yellow spice that adds color and flavor.</dd>
+              <dt>Cardamom</dt>
+              <dd>Aromatic seeds used for their distinctive flavor.</dd>
+              <dt>Saffron</dt>
+              <dd>Gives the dish its characteristic golden color and unique aroma.</dd>
+            </dl>
+
+            <hr>
+            <!-- Table: border,border-collapse,padding,colspan,rowspan -->
+            <h2>Nutrition Facts (Per Serving)</h2>
+            <table border="1" class="nutrition-table">
+                <tr>
+                    <th>Nutrient</th>
+                    <th>Amount</th>
+                    <th colspan="2">Notes</th>
+                </tr>
+                <tr>
+                    <td>Calories</td>
+                    <td>450 kcal </td>
+                    <td>Approx</td>
+                    <td rowspan="2">Varies by portion size</td>
+                </tr>
+                <tr>
+                    <td>Protein</td>
+                    <td>30g </td>
+                    <td>Approx</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <!-- span tag and id -->
+             <h2>Chef's Contact</h2>
+             <div id="chef-contact">
+                <p>Email: <span class="highlight">chef@biryani.com</span></p>
+                <p>Phone: <span class="highlight">+880 1234567890</span></p>
+             </div>
+    </div>
+  </body>
+</html>

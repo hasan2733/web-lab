@@ -1,0 +1,44 @@
+.banner {
+    background-color: #7a5353;
+    color: #d4cece;
+    padding: 15px 30px;
+    overflow: auto;
+}
+
+.banner-left {
+    float: left;
+    width: 50%;
+}
+
+.banner-right {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+#recipe-title {
+    margin-bottom: 5px;
+}
+
+#chef-content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.highlight {
+    background-color: #ffff99;
+    padding: 2px 6px;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nutrition-table th, .nutrition-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}

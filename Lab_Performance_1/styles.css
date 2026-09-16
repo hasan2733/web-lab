@@ -1,0 +1,27 @@
+body{
+    background-color: #46c9c2;
+}
+h1{
+    color: #000000;
+}
+p{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #ac1c1c;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+div.tab table{
+    width: 100%;
+    padding: 10px;
+}
+th,td{
+    padding: 10px;
+    text-align: left;
+}
+div.list ol{
+    background-color: #1fb14b;
+}
