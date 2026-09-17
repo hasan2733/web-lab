@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore — FindIt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand"><span>Find<span class="brand-accent">It</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="explore.html" class="nav-link active">Explore</a>
+                <a href="report.html" class="nav-link">Report Item</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </div>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main class="explore-main">
+        <h1 class="page-title">Explore Lost & Found Items</h1>
+        <div class="filter-panel">
+            <input type="text" id="searchInput" placeholder="Search items..." class="filter-search">
+            <select id="statusFilter">
+                <option value="all">All Status</option>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+                <option value="returned">Returned</option>
+            </select>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Documents">Documents</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Bags">Bags</option>
+                <option value="Keys">Keys</option>
+                <option value="Other">Other</option>
+            </select>
+            <select id="locationFilter">
+                <option value="all">All Locations</option>
+                <option value="Library">Library</option>
+                <option value="Cafeteria">Cafeteria</option>
+                <option value="Academic Building">Academic Building</option>
+                <option value="Parking">Parking</option>
+                <option value="Lab">Lab</option>
+                <option value="Other">Other</option>
+            </select>
+            <select id="dateFilter">
+                <option value="any">Any Date</option>
+                <option value="today">Today</option>
+                <option value="week">This Week</option>
+                <option value="month">This Month</option>
+            </select>
+            <button class="btn btn-outline" id="clearFilters">Clear Filters</button>
+        </div>
+
+        <div class="sort-bar">
+            <label for="sortFilter">Sort by:</label>
+            <select id="sortFilter">
+                <option value="date">Date (Newest)</option>
+                <option value="name">Name (A–Z)</option>
+                <option value="match">Match Score</option>
+            </select>
+        </div>
+
+        <div class="filter-tags" id="filterTags"></div>
+        <div class="results-count" id="resultsCount">Loading items...</div>
+        <div class="items-grid" id="exploreGrid"><p class="loading-placeholder">Loading items...</p></div>
+        <div class="pagination" id="pagination"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span>Find<span class="brand-accent">It</span></span></div>
+            <div class="footer-links"><a href="index.html">Home</a><a href="explore.html">Explore</a><a href="report.html">Report</a><a href="dashboard.html">Dashboard</a><a href="https://abidhasan27.me" target="_blank">About the Author</a></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 FindIt. All rights reserved.</p></div>
+    </footer>
+
+
+</body>
+</html>

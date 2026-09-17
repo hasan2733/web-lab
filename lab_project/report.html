@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Item — FindIt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand"><span>Find<span class="brand-accent">It</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="explore.html" class="nav-link">Explore</a>
+                <a href="report.html" class="nav-link active">Report Item</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </div>
+            <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <main class="report-main">
+        <h1 class="page-title">Report an Item</h1>
+        <p class="page-subtitle">Tell us what happened and we'll help you find a match.</p>
+        <div class="report-layout">
+        <form id="reportForm" class="report-form">
+            <div class="form-section">
+                <h2>What happened?</h2>
+                <div class="radio-group">
+                    <label class="radio-card">
+                        <input type="radio" name="reportType" value="lost" id="lostRadio" checked>
+                        <span class="radio-content">I Lost Something</span>
+                    </label>
+                    <label class="radio-card">
+                        <input type="radio" name="reportType" value="found" id="foundRadio">
+                        <span class="radio-content">I Found Something</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Item Details</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="itemName">Item Name *</label>
+                        <input type="text" id="itemName" required>
+                        <span class="form-error">This field is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category *</label>
+                        <select id="category" required>
+                            <option value="">Select Category</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Documents">Documents</option>
+                            <option value="Accessories">Accessories</option>
+                            <option value="Bags">Bags</option>
+                            <option value="Keys">Keys</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span class="form-error">This field is required.</span>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="description">Description *</label>
+                        <textarea id="description" rows="3" required maxlength="500"></textarea>
+                        <div class="char-counter" id="charCount">0 / 500</div>
+                        <span class="form-error">This field is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location *</label>
+                        <select id="location" required>
+                            <option value="">Select Location</option>
+                            <option value="Library">Library</option>
+                            <option value="Cafeteria">Cafeteria</option>
+                            <option value="Academic Building">Academic Building</option>
+                            <option value="Parking">Parking</option>
+                            <option value="Lab">Lab</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span class="form-error">This field is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date *</label>
+                        <input type="date" id="date" required>
+                        <span class="form-error">This field is required.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Approximate Time</label>
+                        <input type="time" id="time">
+                    </div>
+                    <div class="form-group">
+                        <label for="color">Color</label>
+                        <input type="text" id="color" placeholder="e.g., Black">
+                    </div>
+                    <div class="form-group">
+                        <label for="brand">Brand</label>
+                        <input type="text" id="brand" placeholder="e.g., Casio">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="uniqueFeatures">Unique Features (helps verification)</label>
+                        <textarea id="uniqueFeatures" rows="2" placeholder="e.g., Name sticker on back, scratch near logo"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Photo (optional)</label>
+                        <input type="file" id="photo" accept="image/*">
+                        <img id="photoPreview" class="photo-preview" alt="Photo preview">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPref">Contact Preference</label>
+                        <select id="contactPref">
+                            <option value="email">Email</option>
+                            <option value="message">In-app Message</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="identifiable">What makes this item identifiable? (for verification)</label>
+                        <input type="text" id="identifiable" placeholder="Answer that only the owner would know">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Report</button>
+        </form>
+
+        <aside class="tips-sidebar">
+            <h3>Reporting Tips</h3>
+            <ul>
+                <li>Be as specific as possible about the item's appearance</li>
+                <li>Include the brand name if visible on the item</li>
+                <li>Describe unique marks, stickers, or scratches</li>
+                <li>Select the correct location where it was lost or found</li>
+                <li>Add a photo to help others identify the item</li>
+                <li>Fill in verification details only the owner would know</li>
+            </ul>
+        </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span>Find<span class="brand-accent">It</span></span></div>
+            <div class="footer-links"><a href="index.html">Home</a><a href="explore.html">Explore</a><a href="report.html">Report</a><a href="dashboard.html">Dashboard</a><a href="https://abidhasan27.me" target="_blank">About the Author</a></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 FindIt. All rights reserved.</p></div>
+    </footer>
+
+
+</body>
+</html>

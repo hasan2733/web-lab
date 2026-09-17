@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindIt — Smart Lost & Found Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <span>Find<span class="brand-accent">It</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="explore.html" class="nav-link">Explore</a>
+                <a href="report.html" class="nav-link">Report Item</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Lost something?<br>
+                <span class="hero-highlight">Found something?</span>
+            </h1>
+            <p class="hero-subtitle">Let's get it back to its owner. FindIt uses smart matching to reunite lost items with their rightful owners.</p>
+            <div class="hero-buttons">
+                <a href="report.html?type=lost" class="btn btn-primary btn-lg">Report Lost Item</a>
+                <a href="report.html?type=found" class="btn btn-secondary btn-lg">Report Found Item</a>
+            </div>
+            <div class="hero-search">
+                <input type="text" id="heroSearchInput" placeholder='Search "black wallet"' class="hero-search-input">
+                <button class="btn btn-search" id="heroSearchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-banner">
+        <div class="stats-container" id="statsContainer">
+            <div class="stat-card"><div class="stat-number" id="statLost">0</div><div class="stat-label">Items Lost</div></div>
+            <div class="stat-card"><div class="stat-number" id="statFound">0</div><div class="stat-label">Items Found</div></div>
+            <div class="stat-card"><div class="stat-number" id="statReturned">0</div><div class="stat-label">Returned</div></div>
+            <div class="stat-card"><div class="stat-number" id="statMatches">0</div><div class="stat-label">Matches Found</div></div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Our smart platform does more than just list items — it finds matches.</p>
+        <div class="steps-grid">
+            <div class="step-card"><div class="step-number">01</div><div class="step-icon">Report</div><h3>Report</h3><p>Post details about the item you lost or found.</p></div>
+            <div class="step-card"><div class="step-number">02</div><div class="step-icon">Match</div><h3>Find Matches</h3><p>Our matching system identifies potential matches.</p></div>
+            <div class="step-card"><div class="step-number">03</div><div class="step-icon">Verify</div><h3>Verify Ownership</h3><p>Claimants answer verification questions.</p></div>
+            <div class="step-card"><div class="step-number">04</div><div class="step-icon">Return</div><h3>Return Item</h3><p>Connect safely and complete the return.</p></div>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <h2 class="section-title">Browse by Category</h2>
+        <p class="section-subtitle">Quickly find items in a specific category</p>
+        <div class="category-chips">
+            <span class="category-chip" data-category="Electronics">Electronics</span>
+            <span class="category-chip" data-category="Documents">Documents</span>
+            <span class="category-chip" data-category="Accessories">Accessories</span>
+            <span class="category-chip" data-category="Bags">Bags</span>
+            <span class="category-chip" data-category="Keys">Keys</span>
+            <span class="category-chip" data-category="Other">Other</span>
+        </div>
+    </section>
+
+    <section class="recent-section">
+        <h2 class="section-title">Recent Lost Items</h2>
+        <div class="items-grid" id="recentLostGrid"><p class="loading-placeholder">Loading items...</p></div>
+        <div style="text-align:center; margin-top:1.5rem;"><a href="explore.html?filter=lost" class="btn btn-outline">View All Lost Items →</a></div>
+    </section>
+
+    <section class="recent-section" style="margin-top:3rem;">
+        <h2 class="section-title">Recently Found Items</h2>
+        <div class="items-grid" id="recentFoundGrid"><p class="loading-placeholder">Loading items...</p></div>
+        <div style="text-align:center; margin-top:1.5rem;"><a href="explore.html?filter=found" class="btn btn-outline">View All Found Items →</a></div>
+    </section>
+
+    <section class="location-section">
+        <h2 class="section-title">Most Active Locations</h2>
+        <p class="section-subtitle">Where items are most frequently lost and found on campus</p>
+        <div class="chart-container" id="locationChart"></div>
+    </section>
+
+    <section class="success-section">
+        <h2 class="section-title">Successfully Returned</h2>
+        <div class="success-stories" id="successStories"><p class="loading-placeholder">Loading success stories...</p></div>
+    </section>
+
+    <section class="faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about FindIt</p>
+        <div class="faq-item">
+            <button class="faq-question">How does the matching system work?</button>
+            <div class="faq-answer"><p>FindIt compares lost and found items by category, color, location, date, and keywords in the description. Items with a match score of 40% or higher are flagged as potential matches.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Do I need an account to report an item?</button>
+            <div class="faq-answer"><p>Yes, you need to create a free account to report lost or found items. Browsing and searching items is available to everyone without signing in.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How do I claim a found item?</button>
+            <div class="faq-answer"><p>Click "This Might Be Mine" on a found item's detail page. You'll answer verification questions about the item's brand and unique features to prove ownership.</p></div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Is my personal information safe?</button>
+            <div class="faq-answer"><p>Your contact details are only shared after a claim is approved. Verification answers are checked against item details without revealing them publicly.</p></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand"><span>Find<span class="brand-accent">It</span></span></div>
+            <div class="footer-links"><a href="index.html">Home</a><a href="explore.html">Explore</a><a href="report.html">Report</a><a href="dashboard.html">Dashboard</a><a href="https://abidhasan27.me" target="_blank">About the Author</a></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 FindIt. All rights reserved.</p></div>
+    </footer>
+
+
+</body>
+</html>
